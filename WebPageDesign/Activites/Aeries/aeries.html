@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeries Student Information System Portal</title>
+    <style>
+        body{
+            background-color: #193878;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: #fff;
+            padding: .9rem;
+            padding-left: 3rem;
+            position: fixed;
+            left:0;
+            right: 0;
+            top: 0;
+        }
+        main{
+            margin-top: 7rem;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2;
+        }
+        main img{
+            width: 100%;
+        }
+        div.portal{
+            color: #333;
+            font-size: 2rem;
+            background-color: #fff;
+            border-radius: 35px;
+            min-height: 120px;
+            border:1px solid #193878;
+            flex-basis: 25%;
+            padding:1rem;
+        }
+        #flexbox001{
+            display:flex;
+            justify-content:space-evenly;
+        }
+
+        #main>img{
+            width: 70%;
+        }
+        #header>div{
+            width:70%;
+            margin:auto;
+        }
+        #p{
+            width: 70%;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+        .portal>img{
+            width: 15%;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div> <img src="Images/aeries-combomark.svg" alt="Aeries"></div>
+    </header>
+
+<main>
+        <h1>Select Your Portal</h1>
+    
+        <p>
+            Welcome to Aeries SIS! Use the links below to access the portal type you need.
+    Looking for something else? Contact your School/District, visit their webpage, or check out helpful links to Aeries below.
+        </p>
+    
+<div id="flexbox001">
+    
+                    <div class="portal">
+                        <img src="Images/portal.svg.png" alt="Portal">
+                        Admin / Staff Portal</div>
+            
+                    <div class="portal">
+                        <img src="Images/gradebook.svg.png" alt="Gradebook">
+                        Teacher Portal</div>
+            
+                    <div class="portal">
+                        <img src="Images/backpack.svg.png" alt="Backpack">
+                        Parent / Student Portal</div>
+</div>
+                <img src="Images/hero.svg" alt="Students">
+
+
+</main>  
+</body>
+</html>

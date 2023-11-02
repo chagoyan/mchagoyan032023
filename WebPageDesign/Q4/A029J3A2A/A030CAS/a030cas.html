@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A030CAS</title>
+    <style>
+        body{
+        }
+        h1{
+                text-align: center;
+                text-transform:uppercase;
+            }
+        #rotator{
+            background-image: url(Images/370276_0000.psd);
+            width: 10rem;
+            height: 10rem;
+            background-color: lightblue;
+            margin-left: 5rem;
+            animation-name: moveleftttoight;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes moveleftttoight{
+            from{
+                margin-left: 0px;
+                transform:rotate(0deg);
+                background-color:red;
+            }
+            to{
+                margin-left: 80rem;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A030CAS</h1>
+
+    <div id="rotator"></div>
+    <div id="helloandgoodbye"></div>
+</body>
+</html>

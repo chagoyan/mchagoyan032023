@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest</title>
+
+    <style>
+        body{
+            background-color: yellow;
+            background-image: url(Images/budapestheader.webp);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            margin-top: 100px;
+        }
+        #wrapper{
+            width: 90%;
+            margin: auto;
+            max-width: 1024px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 10px 10px white;
+        }
+        #logoheader{
+            height: 200px;
+            width: 235px;
+            transition: all 2s ;
+            background-image:url(Images/budapestlogo.png);
+            position: absolute;
+            top:-70px;
+            left:-70px;
+        }
+        #logoheader:hover{
+            transform:rotate(-10deg);
+        }
+        #pageheader{
+            min-height: 150px;
+            background-color: #893631;
+            background-image:url(Images/Budapestheaderimage.jpg);
+            background-size:cover;
+            position: relative;
+        }
+        #media{
+            background-color: #893631;
+            padding: .5rem;
+            min-height: 350px;
+        }
+        #mainnav{
+            background-color: #893631;
+            min-height: 500px;
+            padding: .5rem;
+            flex-basis: 15%;
+        }
+        main{
+            background-color: #fff;
+            color: #333;
+            min-height: 500px;
+            padding:.5rem;
+            flex-basis: 85%;
+        }
+        #footer{
+            min-height: 50px;
+            padding: .5rem;
+            background-color: #893631;
+            color: white;
+            text-align: center;
+        }
+        iframe{
+            display: block ;
+            margin: auto;
+            width: 80%;
+            aspect-ratio: 560 / 315;
+        }
+        #flexbox001{
+            display: flex;
+        }
+        #mainnav>ul{
+            background-color: none;
+            list-style-type:none;
+            padding: .25rem;
+        }
+        #mainnav a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+        <header id="pageheader">
+            <div id="logoheader">
+
+            </div>
+        </header>
+        <div id="media">
+            <iframe src="https://www.youtube.com/embed/luDSbWpzWG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+
+
+<div id="flexbox001">
+            <nav id="mainnav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="ststephensbasilica.html">St. Stephen's Basilica</a>
+                    </li>
+                    <li>
+                        <a href="fishermanbastion.html">Fisherman Bastion</a>
+                    </li>
+                    <li>
+                        <a href="budacastle.html">Buda Castle</a>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+            <main id="main">
+
+                <h1>Fisherman Bastion</h1>
+
+            </main>
+</div>
+
+
+
+
+        <footer id="footer">
+            &copy; Jonathan 2023
+        </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        h1, h2{
+                text-align: center;
+                text-transform:uppercase;
+            }
+        #rotator{
+            width: 10rem;
+            height: 10rem;
+            background-color: lightblue;
+            margin-left: 5rem;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #helloandgoodbye{
+            width: 10rem;
+            height: 10rem;
+            background-color: lightblue;
+            margin-left: 5rem;
+            animation-name:helloandgoodbye;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes rotate{
+            from{
+                margin-left: 0px;
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            to{
+                margin-left: 80rem;
+                transform: rotate(360deg);
+                background-color: blue;
+            }
+        }
+        @keyframes helloandgoodbye{
+            from{
+                margin-left: 0px;
+                transform:translate(0px);
+                background-color: red;
+            }
+            to{
+                margin-left: 80rem;
+                transform:translate(200px);
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A</h1>
+    <h2>Keyframe Animatuons From To</h2>
+
+    <div id="rotator"></div>
+    <div id="helloandgoodbye"></div>
+</body>
+</html>

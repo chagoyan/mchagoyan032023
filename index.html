@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Chagoyan - Portfolio</title>
+    <style>
+      body {
+        background-color: steelblue;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        background-image: url(Img/codebody.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      #container {
+        background-color: #fff;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1.5rem;
+      }
+      #wrapper {
+        /* border: 1px solid silver; */
+        border-radius: 1.9rem;
+        margin: 0 auto;
+        max-width: 960px;
+      }
+      #pageheader {
+        background-color: #4c97c7;
+        min-height: 250px;
+        padding: 1rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        background-image: url(Img/codebody.jpg);
+        background-size: cover;
+      }
+      #logo {
+        width: 140px;
+        height: 134px;
+        background-color: #041e39;
+        border-radius: 50%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        position: relative;
+        left: -25px;
+        top: -25px;
+        background-image: url(Img/headerlogo.jpg);
+        background-size: cover;
+      }
+
+      blockquote {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px black;
+      }
+      #quote {
+        background-color: red;
+        text-align: right;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        width: 80%;
+        margin: auto;
+      }
+      #pagenav {
+        background-color: #0b3373;
+        padding: 1rem;
+        color: white;
+        border-top: 3px solid red;
+        border-bottom: 3px solid red;
+      }
+      #media {
+        min-height: 250px;
+        background-color: #2d2e5a;
+        padding: 1rem;
+        color: white;
+      }
+      iframe {
+        width: 80%;
+        aspect-ratio: 16/9;
+        margin: auto;
+        display: block;
+      }
+
+      #pagemain {
+        min-height: 250px;
+        background-color: white;
+        padding: 1rem;
+      }
+      img#heroimage {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 1rem;
+      }
+      #career {
+        background-color: #4c97c7;
+        color: white;
+        padding: 1rem;
+        min-height: 200px;
+      }
+      .semester {
+        background-color: aquamarine;
+        min-height: 200px;
+        padding: 1rem;
+        color: #333;
+        border-top: 3px solid red;
+      }
+      #semester1 {
+      }
+      #semester2 {
+      }
+      #pagefooter {
+        background-color: white;
+        color: #333;
+        padding: 1rem;
+        text-align: center;
+      }
+      #subfooter {
+        background-color: #0b3373;
+        color: white;
+        min-height: 150px;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 0 0 1.5rem 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrapper">
+        <header id="pageheader">
+          <div id="logo"></div>
+
+          <blockquote>This is my favorite quote</blockquote>
+          <p id="quote">- anonymous</p>
+        </header>
+
+        <nav id="pagenav">#pagenav - navigation links</nav>
+
+        <div id="media">
+          <iframe
+            src="https://www.youtube.com/embed/VAH-ixdFWFs?si=DzfysOXe1b8wqkIM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <main id="pagemain">
+          <h1>Manuel Chagoyan</h1>
+          <h2>Portfolio</h2>
+          <img id="heroimage" src="Img/webapps.png" alt="Web Apps" />
+          <p>
+            Welcome to my portfolio. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Accusantium nobis, sapiente tempora illo quo
+            nostrum ducimus quod tempore cumque quae.
+          </p>
+        </main>
+
+        <section id="career">#career - career documents</section>
+
+        <section id="semester1" class="semester">
+          <h2>Semester 1</h2>
+          <ul>
+            <li><a href="Semester1/A001JS/a001js.html">A001JS</a></li>
+            <li><a href="Semester1/A002JS/a002js.html">A002JS</a></li>
+            <li>A029J3</li>
+          </ul>
+        </section>
+
+        <section id="semsester2" class="semester">
+          <h2>Semester 2</h2>
+        </section>
+
+        <footer id="pagefooter">
+          <a href="https://chagoyan.com/">chagoyan</a> |
+
+          <a
+            href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html"
+            >color scheme</a
+          >
+          |
+
+          <a href="https://coalingahuron.aeries.net">aeries</a> |
+
+          <a href="https://go.weareimago.com/">imago</a> |
+
+          <a href="https://app.listenwise.com/sign_in">listenwise</a> |
+
+          <a href="https://classroom.google.com/">classroom</a> |
+
+          <a href="https://minga.io">minga</a>
+        </footer>
+
+        <footer id="subfooter">youtube | espn | chess</footer>
+      </div>
+      <!-- end the wrapper -->
+    </div>
+    <!-- end the container -->
+  </body>
+</html>

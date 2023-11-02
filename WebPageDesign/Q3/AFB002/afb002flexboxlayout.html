@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFB001 - Flexbox Layout</title>
+</head>
+<style>
+     body{
+            background-color: white;
+        }
+        #wrapper{
+            max-width: 960px;
+            margin: auto;
+            border: 1px soild white;
+        }
+        #div{
+            background-color: lightblue;
+            min-height: 250px;
+            border: 1px solid black;
+        }
+        #pageheader{
+            flex-basis:100%; background-color: aqua;
+            height: 150px;
+            padding: 0.5rem;
+        }
+        #topnav{
+            flex-basis:100%; background-color: red;
+            height: 75px;
+            padding: 0.5rem;
+        }
+            #flexbox001{
+            display: flex;
+        }
+        #main{
+            flex-basis:75%; background-color: orange;
+            height: 400px;
+            padding: 0.5rem;
+        }
+        #aside{
+            flex-basis:25%; background-color: orangered;
+            height: 400px;
+            padding: 0.5rem;
+        }
+        #q1section{
+            height: 200px;
+            border: 1px solid black;
+            background:orchid;
+            padding: 0.5rem;
+        }
+        #q2section{
+            height: 200px;
+            border: 1px solid black;
+            background:orchid;
+            padding: 0.5rem;
+        }
+        #q3section{
+            height: 200px;
+            border: 1px solid black;
+            background:orchid;
+            padding: 0.5rem;
+        }
+        #q4section{
+            height: 200px;
+            border: 1px solid black;
+            background:orchid;
+            padding: 0.5rem;
+        }
+        #flexbox002{
+            display: flex;
+        }
+        #pagefooter{
+            flex-basis: 100%;background-color:aquamarine;
+            height: 100px;
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+
+</style>
+<body>
+    <body>
+        <div id="wrapper">
+                    <div id="pageheader">Pageheader</div>
+                    <div id="topnav">Topnav</div>
+        </div>
+    <div id="flexbox001">
+        <div id="main">Main</div>
+        <div id="aside">Aside</div>
+    </div>     
+<div id="wrapper">
+    <div id="q1section">q1section</div>
+    <div id="q2section">q2section</div>
+    <div id="q3section">q3section</div>
+    <div id="q4section">q4section</div>
+</div>
+    
+    <div id="flexbox002">
+                    <div id="pagefooter">Pagefooter</div>
+    </div>
+        <!-- end the wrapper -->
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Images</title>
+    <style>
+        body{
+            background-image: url(Images/floral-background-eucalyptus-flower-wallpaper-preview.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        #butterfly{
+            height: 200px;
+            width: 200px;
+            margin-top: 400px;
+            background-image: url(Images/butterfly.png);
+            background-repeat: no-repeat;
+            animation-name: glide;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes glide{
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(720deg);
+                margin-top: 0px;
+            }
+        }
+        #butterflycontainer{
+            width: 300px;
+            height: 400px;
+            animation-name: moveupthendown;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;        
+        }
+        @keyframes moveupthendown{
+            from{
+                margin-left: -200px;
+            }
+            to{
+                margin-left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Images</h1>
+
+    <div id="butterflycontainer">
+
+        <div id="butterfly"></div>
+
+    </div>
+</body>
+</html>
